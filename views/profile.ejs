@@ -1,0 +1,48 @@
+<%- include('partials/header') -%>
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-12">
+          <div>
+              <p><strong>Teacher Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+              <a href="/logout" class="col-3 btn btn-primary">Logout</a>
+          </div>
+          <div class="mt-5">
+            <h2>Add a Student</h2>
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <div class="mb-3">
+                  <label for="title" class="form-label">Student Name</label>
+                  <input type="text" placeholder="First and Last Name" class="form-control" id="title" name="title">
+              </div>
+              <div class="mb-3">
+                <label for="caption" class="form-label">Student Overview</label>
+                <textarea class="form-control" placeholder="Include IEPs/Accomodations" id="caption" name="caption"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="contact" class="form-label">Parent Contact</label>
+                <input type="text" placeholder="Name and Phone Number (800)000-0000" class="form-control" id="contact" name="contact">
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Grade</label>
+              <input type="text" placeholder="Grade Level" class="form-control" id="grade" name="grade">
+               
+              </div>
+              <div class="mb-3">
+                <label for="imgUpload" class="form-label">Student Picture</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">
+              </div>
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+              <div class="row justify-content-center mt-5">
+                <a class="btn btn-primary" href="/feed">View Records</a>
+              </div>  
+      
+            </form>
+          </div>
+      </div>
+      
+
+     
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') -%>

@@ -1,0 +1,69 @@
+body {
+    background-color: #96A4DB;
+}
+.btn{
+    background-color: black;
+    border: black;
+}
+.navbar a {
+   color: whitesmoke;
+   font-family: 'Six Hands Chalk', 'Roboto', Arial, Helvetica, sans-serif;
+   font-size: 1.5em;
+}
+.navbar li > a{
+    font-family: 'Eskool', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+
+}
+
+.vid{
+    background-image: url(/imgs/womanintech.jpg);
+    background-size: cover;
+  
+}
+.hero{
+    display: block;
+    margin: 0 auto;
+   
+}
+.blurb{
+    padding-top: 5em;
+    text-align: center;
+}
+.blurb h1{
+    padding-bottom: .5em;
+    font-size: 3em;
+}
+.blurb p{
+    font-size: 1.2em;
+}
+.fix{
+    height: 300px;
+    width: auto;
+}
+h1{
+    font-family: 'Eskool', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resources{
+    width: 70%;
+    margin: 0 auto;
+}
+.resources h1{
+    text-align: center;
+}
+.list-group-item:hover {
+    background-color: gold;
+  }
+  .card img{
+    height: 15rem;
+    width: auto;
+  }
+ .container{
+    margin-top: 20px;
+ }
+.nav a{
+    color: black;
+}
+.mt-5 h2{
+    font-family: 'Eskool', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

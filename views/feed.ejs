@@ -1,0 +1,25 @@
+<%- include('partials/header') -%>
+<div class="container">
+  
+  <div class="col">      
+    <ul class="row align-items-center list-unstyled">
+    
+  <% for(var i=0; i<posts.length; i++) {%>
+    <li class="col justify-content-between mt-5">
+      <div class="card" style="width: 20rem;">
+        <img class="img-fluid" src="<%= posts[i].image%>">
+        <div class="card-body">
+          <h5 class="card-title"><%=posts[i].title%></h5>
+          <p class="card-text"><%=posts[i].caption%></p>
+          <a href="/post/<%= posts[i]._id%>" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      
+    </li>
+  <% } %>
+  </ul>
+
+   
+  </div>  
+ 
+<%- include('partials/footer') -%>
